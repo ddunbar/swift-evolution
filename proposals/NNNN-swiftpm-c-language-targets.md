@@ -37,17 +37,17 @@ composed only of C sources. The conventions will be amended as follows:
    set of C sources, recognized by file extension. If a target contains any C
    sources, it must only contain C sources.
 
-2. C targets *may* have a special subdirectory named `Includes` or `include`
+2. simple C targets *may* have a special subdirectory named `Includes` or `include`
    (the include directory). Only one such name may be used.
 
    The headers in this directory are presumed to be the "exported" interface of
-   the C target, and will be made available for use in other targets.
+   the simple C target, and will be made available for use in other targets.
 
 3. As with Swift targets, we will use the presence of a source file named
    `main.c` (or `main.cpp`, etc.) to indicate an executable versus a library.
 
-The following example layout would define a package containing a C library and a
-Swift target:
+The following example layout would define a package containing a simple
+C library target and a Swift target:
 
     example/src/include/foo/foo.h
     example/src/foo/foo.c
