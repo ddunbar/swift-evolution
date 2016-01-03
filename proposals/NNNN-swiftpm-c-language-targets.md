@@ -85,7 +85,16 @@ addressed with this proposal:
    of compiler flags. We expect future proposals to accomodate the need to
    modify those flags.
 
-3. We intend for the feature to be built in such a way as to support any
+3. No provision is made in this proposal for the detection of installed
+   system libraries, or enabling features related to library availability,
+   CPU architecture, or operating system.  The compiler may provide useful
+   preprocessor macros automatically in some cases.
+
+4. No provision is made in this proposal for build scripts, integration
+   with an existing build system, code signing, packaging, or other custom
+   build behavior.
+
+5. We intend for the feature to be built in such a way as to support any
    standard compliant C compiler, but our emphasis will largely be on supporting
    the use of Clang as that compiler (and of course our modules support will
    require Clang).
