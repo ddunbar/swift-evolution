@@ -108,9 +108,10 @@ packages, but this is likely to be desirable.
 It is worth considering the impact on existing C language projects which do not
 follow the conventions above.
 
-* Most projects will not conform to these conventions. However, this is expected
-  of any "simple" convention; we don't think that there is any other
-  straightforward convention that would allow a significant percentage of
+* Most projects will not conform to these conventions. However, this is
+  expected of any "simple" convention; we don't think that there is any
+  other straightforward convention for directly building C targets in
+  the Swift package manager that would allow a significant percentage of
   existing C language projects to "just work".
 
   We do anticipate allowing certain overrides to be present in the manifest file
