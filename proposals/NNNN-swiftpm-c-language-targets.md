@@ -1,4 +1,4 @@
-# Package Manager C Language Target Support
+# Package Manager C Language Simple Target Support
 
 * Proposal: [SE-NNNN](https://github.com/apple/swift-evolution/blob/master/proposals/NNNN-swiftpm-c-language-targets.md)
 * Author(s): [Daniel Dunbar](https://github.com/ddunbar)
@@ -9,7 +9,7 @@
 
 This is a proposal for adding initial package manager support for the C, C++,
 Objective-C, and Objective-C++ languages (henceforth, simply referred to as "C"
-languages). This proposal is limited in scope to only supporting targets
+languages). This proposal is limited in scope to only supporting simple targets
 consisting entirely of C languages; there is no provision for supporting targets
 which include both C and Swift sources.
 
