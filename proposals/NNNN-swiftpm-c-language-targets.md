@@ -15,13 +15,18 @@ which include both C and Swift sources.
 
 ## Motivation
 
-Swift has easy interoperability with C based languages through the use of the
-Clang modules system. We would like Swift packages to be able to include C
-targets which can be exposed to Swift directly as part of a single package.
-
-This gives developers a simple mechanism for "falling back" to C when they need
+Developers need a simple mechanism for "falling back" to C when they need
 to access APIs which are inadequately or poorly bridged to Swift, or when they
 need to implement behavior which is better done in low-level C than Swift.
+
+Swift has easy interoperability with C based languages through the use
+of the Clang modules system. We would like Swift packages to be able to
+include simple C targets which build primarily with the Swift package
+manager and can be exposed to Swift directly as part of a single
+package.
+
+This proposal does not address C targets which do not fit into these
+requirements.
 
 ## Proposed solution
 
